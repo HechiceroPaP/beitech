@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Clientes App</title>
+	<link href="app/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<script src="app/node_modules/angular/angular.min.js"></script>
+	<script src="app/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="app/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div ng-app="" class=".container-fluid">
+	  <p>Name : <input type="text" ng-model="name" class='form-control'></p>
+	  <h1>Hello {{name}}</h1>
+	</div>
+	
+	<script>
+		$(function () {
+			console.log ('Ya tenemos jquery');
+		});
+	</script>
+	
+</body>
+</html>
