@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<body>
+	 <div class="container-content">
+	 	<br />
+		<table class="table table-sm table-hover" ng-show="lstOrdenes.length > 0">
+			<thead class="">
+				<tr>
+					<th scope="col">Creation Date</th>
+					<th scope="col">Order ID</th>
+					<th scope="col">Total $</th>
+					<th scope="col">Delivery Address</th>
+					<th scope="col">Products</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="orden in lstOrdenes">
+					<td>{{orden.creationDate}}</td>
+					<td>{{orden.orderId}}</td>
+					<td>{{orden.total}}</td>
+					<td>{{orden.deliveryAddress}}</td>
+					<td>
+						<ul>
+							<li ng-repeat="producto in orden.lstProductos">{{producto.quantity}} * {{productos.name}}</li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

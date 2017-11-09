@@ -2,3 +2,7 @@
 .sonarlint
 /RemoteSystemsTempFiles
 /Servers
+.project
+.settings
+.recommenders
+rebel.xml
